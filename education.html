@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<head>
+<title>Education Journey</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:lavender;
+  padding: 20px;
+  text-align: center;
+  font-family: verdana;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:black;">Education Journey</h1>
+</div>
+
+</body>
+
+<style>
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#b4c2f0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#f5c4e5;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:#f5c4e5;
+  color:black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="biodata.html">Biodata</a>
+  <a href="family.html">Family</a>
+  <a href="education.html" class="active">Education</a>
+  <a href="friends.html">Friends</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<style>
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lavender;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: ;
+  color: white;
+}
+</style>
+
+<style>
+
+li::marker {
+  color: purple;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: lavender;
+  border: 2px solid purple;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #5c6bc0;
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      animation: slideText 5s linear infinite;
+    }
+
+    
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .gallery img {
+      display: block;
+      margin: 10px auto;
+      border-radius: 5px;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border: none;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding: 0 20px;
+      list-style: disc;
+    }
+   
+   
+  </style>
+</head>
+<body>
+
+
+<h1><marquee scrollamount="10">My Educational Path and Experiences</marquee></h1>
+<center><h4>Explore my journey by clicking the logo!</h4></center>
+
+<a name="xyz">
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2><i>2011</i></u></h2>
+      <ul>
+        <li><b>SK Sri Langat, Selangor</b></li>
+<br>
+	<li>The <i>first primary school</i> I studied before moved to Kedah</li>
+<br>
+	<li> I only had the chance to study there during <sup>Year 1</sup></li>
+<br>
+	<li>Made <sub>diverse friends</sub> here after a kindergarten of only Malay peers!</li>
+<br>
+      </ul>
+<br>
+      <div class="gallery">
+        <a href="https://www.facebook.com/sksrilangatbanting/?locale=ms_MY" target="_blank">
+          <img src="sksl.png" alt="SK Sri Langat" width="170" height="130">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2><i>2012-2014</i></h2>
+      <ul>
+        <li><b>SK Bandar Baru Darulaman, Jitra</b></li>
+<br>
+	<li>The primary school where I studied the <sub>longest</sub></li>
+<br>
+	<li>Joined <sup>Kalam Jamaie school team</sup> as cocuricullum experiences</li>
+<br>
+      </ul>
+<br>
+      <div class="gallery">
+        <a href="https://www.facebook.com/infoskbbdjitrakedah/?locale=ms_MY" target="_blank">
+          <img src="skbbd.jpeg" alt="SK Bandar Baru Darulaman" width="130" height="130">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2><i>2015-2016</i></h2>
+      <ul>
+        <li><b>SK Sri Banai, Jitra</b></li>
+<br>
+	<li>My <i>last primary school</i> before entering high scool phase</li>
+<br>
+      </ul>
+      <div class="gallery">
+        <a href="https://www.facebook.com/sksbkedah/?locale=ms_MY" target="_blank">
+          <img src="sksb.jpeg" alt="SK Seri Banai" width="130" height="130">
+        </a>
+      </div>
+      <ul>
+        <li><b>Experiences & Achievements</b></li>
+        <ul>
+          <li>Part of <sup>TKRS</sup> marching school team</li>
+<br>
+          <li>Part of <sub>netball</sub> school team</li>
+<br>
+          <li>UPSR: 3A 3B</li>
+<br>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>2017-2021</h2>
+      <ul>
+        <li><b>SMK Agama Kedah, Alor Setar</b></li>
+<br>
+	<li>My <i>dream</i> school since primary school</li>
+<br>
+      </ul>
+      <div class="gallery">
+        <a href="https://www.instagram.com/smkakofficial/?hl=en" target="_blank">
+          <img src="smkak.jpeg" alt="SMK Agama Kedah" width="130" height="130">
+        </a>
+      </div>
+      <ul>
+        <li><b>Experiences & Achievements</b></li>
+        <ul>
+          <li>Form 5 club committee member</li>
+<br>
+          <li>SPM: 9A 2B</li>
+<br>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2>2022</h2>
+      <ul>
+        <li>Universiti Teknologi Mara (UiTM) Cawangan Kedah, Kampus Sungai Petani</li>
+      </ul>
+      <div class="gallery">
+        <a href="https://kedah.uitm.edu.my" target="_blank">
+          <img src="uitm.png" alt="UiTM Kedah" width="110" height="130">
+        </a>
+      </div>
+      <ul>
+        <li><b>Experiences & Achievements</b></li>
+        <ul>
+          <li>Dean's List honors</li>
+<br>
+          <li>Internship at PPD Kubang Pasu</li>
+<br>
+        </ul>
+      </ul>
+      <iframe src="https://www.youtube.com/embed/b5DpQPYtxuk"></iframe>
+    </div>
+  </div>
+</div>
+
+<center><a href="#xyz">UP</a></center>
+
+
+<style>
+.footer {
+ 
+  color: black;
+  text-align: center;
+  font-family: verdana;
+  font-size: 10px;
+  padding: 10px;
+}
+</style>
+
+<div class="footer">
+  <p>IMD318@2024</p>
+</div>
+
+
+</body>
+</html>
+
